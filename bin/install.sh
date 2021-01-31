@@ -38,12 +38,11 @@ if [ "$WEB_UPGRADE" = false ]; then
   tput setaf 4
 
   cat << EOF
-       _____                           __         ____  _____ ______
-      / ___/_____________  ___  ____  / /_  __   / __ \/ ___// ____/
-      \__ \/ ___/ ___/ _ \/ _ \/ __ \/ / / / /  / / / /\__ \/ __/
-     ___/ / /__/ /  /  __/  __/ / / / / /_/ /  / /_/ /___/ / /___
-    /____/\___/_/   \___/\___/_/ /_/_/\__, /   \____//____/_____/
-                                     /____/
+        __  __ _  _______ ____   ___  _   _ ___ ____ 
+       |  \/  | |/ /_   _|  _ \ / _ \| \ | |_ _/ ___|
+       | |\/| | ' /  | | | |_) | | | |  \| || | |    
+       | |  | | . \  | | |  _ <| |_| | |\  || | |___ 
+       |_|  |_|_|\_\ |_| |_| \_\\___/|_| \_|___\____|
 EOF
 
   # Reset color
@@ -136,10 +135,10 @@ fi
 if [ -z "${REPOSITORY}" ]; then
   if [ "$WEB_UPGRADE" = false ]; then
     set -x
-    REPOSITORY=${1:-https://github.com/screenly/screenly-ose.git}
+  REPOSITORY=${1:-https://github.com/markusklonowski/signage.git}
   else
     set -e
-    REPOSITORY=https://github.com/screenly/screenly-ose.git
+  REPOSITORY=https://github.com/markusklonowski/signage.git
   fi
 fi
 
