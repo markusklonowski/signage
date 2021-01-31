@@ -153,7 +153,7 @@ fi
 
 sudo sed -i 's/apt.screenlyapp.com/archive.raspbian.org/g' /etc/apt/sources.list
 sudo apt update -y
-sudo apt-get purge -y python-setuptools python-pip python-pyasn1
+sudo apt-get purge -y python-pyasn1
 sudo apt-get install -y python-dev git-core libffi-dev libssl-dev python-pip
 
 if [ "$NETWORK" == 'y' ]; then
